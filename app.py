@@ -306,7 +306,7 @@ app.layout = html.Div(
                             "The index combines seven indicators into a single, comparative measure of economic well-being. The index is constructed from the U.S. Census Bureau’s American Community Survey (ACS) 5-Year Estimates and County Business Patterns (CBP) datasets.",
                             className="control_label",style={"text-align": "justify"}
                         ),
-                        html.P("The seven components of the index are:", className="control_label",style={"text-align": "justify"})
+                        html.P("The seven components of the index are:", className="control_label",style={"text-align": "justify"}),
                         html.Ul(
                             [html.Li(i) for i in metrics]
                         ),
