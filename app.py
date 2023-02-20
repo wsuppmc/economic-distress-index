@@ -267,11 +267,11 @@ app.layout = html.Div(
                         html.Div(
                             [
                                 html.H4(
-                                    "Food consumption characteristics of the European Union",
+                                    "Economic Distress Index",
                                     style={"font-weight": "bold"},
                                 ),
                                 html.H5(
-                                    "Analysis of the relationship between nutritional patterns and \n the health status within the countries", style={"margin-top": "0px"}
+                                    "County-Level Measures of Economic Health", style={"margin-top": "0px"}
                                 ),
                             ]
                         )
@@ -293,15 +293,14 @@ app.layout = html.Div(
                 html.Div(
                     [
 
-                        html.H6("Consumption by food type", style={"margin-top": "0","font-weight": "bold","text-align": "center"}),
+                        html.H6("Distress by Indicator", style={"margin-top": "0","font-weight": "bold","text-align": "center"}),
 
                         html.P(
-                            "The cultures and customs of the 27 EU countries differ widely. The same applies to their eating and drinking habits." 
-                            " The map on the right explores the food supply in kilograms per capita per year.",
+                            "The index combines seven indicators into a single, comparative measure of economic well-being. The index is constructed from the U.S. Census Bureau’s American Community Survey (ACS) 5-Year Estimates and County Business Patterns (CBP) datasets.",
                             className="control_label",style={"text-align": "justify"}
                         ),
                         html.P(),
-                        html.P("Select a food category", className="control_label",style={"text-align": "center","font-weight":"bold"}),
+                        html.P("Select a Metric", className="control_label",style={"text-align": "center","font-weight":"bold"}),
                         radio_food_behaviour,
 
                     ],
