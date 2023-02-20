@@ -317,26 +317,26 @@ app.layout = html.Div(
                             [
                                 html.Div(
                                     [
-                                        html.P(id="well_text"), html.P("Maximum",style={"text-align": "center","font-weight":"bold"}),
-                                        html.P(id="max_name",style={"text-align": "center"}),
-                                        html.P(id="max_value",style={"text-align": "center"}),
+                                        html.P(id="well_text"), html.P("Maximum",style={"text-align": "center","font-weight":"bold", "color":"white"}),
+                                        html.P(id="max_name",style={"text-align": "center", "color":"white"}),
+                                        html.P(id="max_value",style={"text-align": "center", "color":"white"}),
                                     ],
                                         className="mini_container_max",
                                         id="wells",
                                 ),
                                 html.Div(
-                                    [html.P(id="gasText"), html.P("Minimum",style={"text-align": "center","font-weight":"bold"}),
-                                    html.P(id="min_name",style={"text-align": "center"}),
-                                     html.P(id="min_value",style={"text-align": "center"}),
+                                    [html.P(id="gasText"), html.P("Minimum",style={"text-align": "center","font-weight":"bold", "color":"white"}),
+                                    html.P(id="min_name",style={"text-align": "center", "color":"white"}),
+                                     html.P(id="min_value",style={"text-align": "center", "color":"white"}),
                                     ],
                                     className="mini_container_min",
                                     id="gas"
                                 ),
                                 html.Div(
-                                    [html.P(id="oilText"), html.P("Mean",style={"text-align": "center","font-weight":"bold"}),
-                                     html.P(id="mean",style={"text-align": "center"}),
-                                     html.P("Standard deviation",style={"text-align": "center","font-weight":"bold"}), 
-                                     html.P(id="st_dev",style={"text-align": "center"})],
+                                    [html.P(id="oilText"), html.P("Mean",style={"text-align": "center","font-weight":"bold", "color":"white"}),
+                                     html.P(id="mean",style={"text-align": "center", "color":"white"}),
+                                     html.P("Standard deviation",style={"text-align": "center","font-weight":"bold", "color":"white"}), 
+                                     html.P(id="st_dev",style={"text-align": "center", "color":"white"})],
                                     #,
                                     className="mini_container_mean",
                                     id="oil",
