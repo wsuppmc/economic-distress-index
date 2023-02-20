@@ -362,11 +362,11 @@ app.layout = html.Div(
                         ),
                     ],
                     id="right-column",
-#                     className="eight columns",
-                    className="row container-display",
+                    className="eight columns",
                 ),
             ],
-            className="row flex-display",
+#             className="row flex-display",
+            className="row container-display",
         ),
 
         html.Div(
