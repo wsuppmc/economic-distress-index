@@ -303,10 +303,10 @@ app.layout = html.Div(
                         html.H6("Distress by Indicator", style={"margin-top": "0","font-weight": "bold","text-align": "center"}),
 
                         html.P(
-                            "The index combines seven indicators into a single, comparative measure of economic well-being. The index is constructed from the U.S. Census Bureau’s American Community Survey (ACS) 5-Year Estimates and County Business Patterns (CBP) datasets.",
+                            "The index combines seven indicators into a single, comparative measure of economic well-being. The seven components of the index are:",
                             className="control_label",style={"text-align": "justify"}
                         ),
-                        html.P("The seven components of the index are:", className="control_label",style={"text-align": "justify"}),
+#                         html.P("The seven components of the index are:", className="control_label",style={"text-align": "justify"}),
                         html.Ul(
                             [html.Li(i, className="control_label", style={"text-align": "justify"}) for i in metrics]
                         ),
