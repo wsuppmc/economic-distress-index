@@ -248,20 +248,20 @@ app.layout = html.Div(
         html.Div(id="output-clientside"),
         html.Div(
             [
-                html.Div(
-                    [
-                        html.Img(
-                            src=app.get_asset_url("wsu-vertical.jpg"),
-                            id="plotly-image",
-                            style={
-                                "height": "60px",
-                                "width": "auto",
-                                "margin-bottom": "25px",
-                            },
-                        )
-                    ],
-                    className="one-third column",
-                ),
+#                 html.Div(
+#                     [
+#                         html.Img(
+#                             src=app.get_asset_url("wsu-vertical.jpg"),
+#                             id="plotly-image",
+#                             style={
+#                                 "height": "60px",
+#                                 "width": "auto",
+#                                 "margin-bottom": "25px",
+#                             },
+#                         )
+#                     ],
+#                     className="one-third column",
+#                 ),
                 html.Div(
                     [
                         html.Div(
