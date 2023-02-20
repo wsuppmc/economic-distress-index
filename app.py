@@ -466,9 +466,9 @@ app.layout = html.Div(
 
         html.Div(
             [
-                html.H6("Authors", style={"margin-top": "0","font-weight": "bold","text-align": "center"}),
+                html.H6("Author", style={"margin-top": "0","font-weight": "bold","text-align": "center"}),
                 
-                html.P("Maximilian Maukner (m20200645@novaims.unl.pt)  -  Ehsan Meisami Fard (m20201050@novaims.unl.pt)  -  Franz Michael Frank (m20200618@novaims.unl.pt)  -  Steffen Hillmann (m20200589@novaims.unl.pt)", style={"text-align": "center", "font-size":"10pt"}),
+                html.P("Nigel Soria,PhD (nigel.soria@wichita.edu)", style={"text-align": "center", "font-size":"10pt"}),
                 
             ],
             className="row pretty_container",
@@ -478,9 +478,9 @@ app.layout = html.Div(
                 html.H6("Sources", style={"margin-top": "0","font-weight": "bold","text-align": "center"}),
                 dcc.Markdown(
                     """\
-                         - Eurostat: https://ec.europa.eu/eurostat/databrowser/view/HLTH_SHA11_HF__custom_227597/bookmark/table?lang=en&bookmarkId=1530a1e6-767e-4661-9e15-0ed2f7fae0d5
-                         - Food and Agriculture Organization of the United Nations: http://www.fao.org/faostat/en/#data/FBS
-                         - Opendatasoft: https://data.opendatasoft.com/explore/dataset/european-union-countries@public/export/
+                         - Documentation: https://ec.europa.eu/eurostat/databrowser/view/HLTH_SHA11_HF__custom_227597/bookmark/table?lang=en&bookmarkId=1530a1e6-767e-4661-9e15-0ed2f7fae0d5
+                         - American Community Survey: http://www.fao.org/faostat/en/#data/FBS
+                         - County Business Patterns: https://data.opendatasoft.com/explore/dataset/european-union-countries@public/export/
                          - Our World in Data: https://covid.ourworldindata.org/data/owid-covid-data.csv?v=2021-03-11
                         """
                 ,style={"font-size":"10pt"}),
@@ -545,7 +545,7 @@ def display_cluster_map(type_clust):
     locations="id",
     geojson=european_union,featureidkey="properties.gu_a3",
     color=type_clust,
-    hover_name="Country",
+    hover_name="County",
     hover_data=[type_clust],
     #hover_data=["Life Expectancy"],
     #title="clusters by food",
@@ -637,8 +637,8 @@ def indicator(auswahl):
     mean = str(mean)
 
 
-    return "Country: " + max_name, max_value + " kg per capita per year",  \
-           "Country: " + min_name, min_value + " kg per capita per year", \
+    return "County: " + max_name, max_value + " kg per capita per year",  \
+           "County: " + min_name, min_value + " kg per capita per year", \
            mean + " kg per capita per year", \
             st_dev + " kg per capita per year"
 
