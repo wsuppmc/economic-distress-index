@@ -307,7 +307,9 @@ app.layout = html.Div(
                             className="control_label",style={"text-align": "justify"}
                         ),
                         html.P("The seven components of the index are:", className="control_label",style={"text-align": "justify"})
-                        html.Ul(id='my-list', children=[html.Li(i) for i in metrics]),
+                        children = [
+                            html.Ul(id='my-list', children=[html.Li(i) for i in metrics])
+                        ],
                         html.P(),
                         html.P("Select a Metric", className="control_label",style={"text-align": "center","font-weight":"bold"}),
                         radio_food_behaviour,
