@@ -85,7 +85,7 @@ behaviour_options = [
 
 
 
-food_options_ = ["No High School Diploma", "Housing Vacancy Rate", "Unemployment Rate",
+food_options_ = ["Combined Index", "No High School Diploma", "Housing Vacancy Rate", "Unemployment Rate",
                     "Poverty Rate", "Median Income Ratio", "Change in Employment", "Change in Establishments"]
 
 food_options = [
@@ -237,6 +237,16 @@ fig_bar.update_xaxes(showline=True, linewidth=2, linecolor='black')
 
 ## FF ##
 
+metrics = [
+    "no high school diploma—percent of the population 25 years of age and older without a high school diploma or equivalent;",
+    "housing vacancy rate—percent of habitable housing that is unoccupied, excluding properties that are for seasonal, recreational, or occasional use;",
+    "unemployment rate—the number of unemployed people as a fraction of the labor force;",
+    "poverty rate—percent of the population living under the poverty line;",
+    "median income ratio—median household income as a percent of the state’s median household income;",
+    "change in employment—percent change in the number of jobs; and",
+    "change in establishments—percent change in the number of business establishments."
+]
+
 # Create app layout
 app.layout = html.Div(
     [
@@ -296,6 +306,8 @@ app.layout = html.Div(
                             "The index combines seven indicators into a single, comparative measure of economic well-being. The index is constructed from the U.S. Census Bureau’s American Community Survey (ACS) 5-Year Estimates and County Business Patterns (CBP) datasets.",
                             className="control_label",style={"text-align": "justify"}
                         ),
+                        html.P("The seven components of the index are:", className="control_label",style={"text-align": "justify"})
+                        html.Ul(id='my-list', children=[html.Li(i) for i in metrics]),
                         html.P(),
                         html.P("Select a Metric", className="control_label",style={"text-align": "center","font-weight":"bold"}),
                         radio_food_behaviour,
