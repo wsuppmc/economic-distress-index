@@ -85,11 +85,8 @@ behaviour_options = [
 
 
 
-food_options_ = ["Alcoholic Beverages", "Animal fats", "Cereals - Excluding Beer", "Eggs", 
-                "Fish, Seafood", "Fruits - Excluding Wine", "Meat", "Milk - Excluding Butter",
-                "Offals", "Oilcrops", "Pulses", "Spices", "Starchy Roots","Stimulants", 
-                "Sugar & Sweeteners", "Treenuts", "Vegetable Oils",
-                "Vegetables" ]
+food_options_ = ["No High School Diploma", "Housing Vacancy Rate", "Unemployment Rate",
+                    "Poverty Rate", "Median Income Ratio", "Change in Employment", "Change in Establishments"]
 
 food_options = [
     dict(label=country, value=country)
