@@ -238,13 +238,13 @@ fig_bar.update_xaxes(showline=True, linewidth=2, linecolor='black')
 ## FF ##
 
 metrics = [
-    "no high school diploma—percent of the population 25 years of age and older without a high school diploma or equivalent;",
-    "housing vacancy rate—percent of habitable housing that is unoccupied, excluding properties that are for seasonal, recreational, or occasional use;",
-    "unemployment rate—the number of unemployed people as a fraction of the labor force;",
-    "poverty rate—percent of the population living under the poverty line;",
-    "median income ratio—median household income as a percent of the state’s median household income;",
-    "change in employment—percent change in the number of jobs; and",
-    "change in establishments—percent change in the number of business establishments."
+    "No high school diploma—percent of the population 25 years of age and older without a high school diploma or equivalent.",
+    "Housing vacancy rate—percent of habitable housing that is unoccupied, excluding properties that are for seasonal, recreational, or occasional use.",
+    "Unemployment rate—the number of unemployed people as a fraction of the labor force.",
+    "Poverty rate—percent of the population living under the poverty line.",
+    "Median income ratio—median household income as a percent of the state’s median household income.",
+    "Change in employment—percent change in the number of jobs.",
+    "Change in establishments—percent change in the number of business establishments."
 ]
 
 # Create app layout
@@ -302,10 +302,10 @@ app.layout = html.Div(
 
                         html.H6("Distress by Indicator", style={"margin-top": "0","font-weight": "bold","text-align": "center"}),
 
-                        html.P(
-                            "The index combines seven indicators into a single, comparative measure of economic well-being. The seven components of the index are:",
-                            className="control_label",style={"text-align": "justify"}
-                        ),
+#                         html.P(
+#                             "The index combines seven indicators into a single, comparative measure of economic well-being. The seven components of the index are:",
+#                             className="control_label",style={"text-align": "justify"}
+#                         ),
 #                         html.P("The seven components of the index are:", className="control_label",style={"text-align": "justify"}),
                         html.Ul(
                             [html.Li(i, className="control_label", style={"text-align": "justify"}) for i in metrics]
