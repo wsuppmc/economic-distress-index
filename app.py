@@ -308,6 +308,7 @@ app.layout = html.Div(
                         ),
                         html.P("The seven components of the index are:", className="control_label",style={"text-align": "justify"}),
                         html.Ul(
+                            className="control_label", style={"text-align": "justify"},
                             [html.Li(i) for i in metrics]
                         ),
                         html.P(),
@@ -478,7 +479,7 @@ app.layout = html.Div(
             [
                 html.H6("Author", style={"margin-top": "0","font-weight": "bold","text-align": "center"}),
                 
-                html.P("Nigel Soria,PhD (nigel.soria@wichita.edu)", style={"text-align": "center", "font-size":"10pt"}),
+                html.P("Nigel Soria, PhD (nigel.soria@wichita.edu)", style={"text-align": "center", "font-size":"10pt"}),
                 
             ],
             className="row pretty_container",
