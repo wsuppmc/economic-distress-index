@@ -365,7 +365,7 @@ app.layout = html.Div(
                     className="eight columns",
                 ),
             ],
-            className="row pretty-container",
+            className="row flex-display",
 #             className="five rows",
         ),
 
